@@ -1,0 +1,11 @@
+### Cadastrar um nova categoria
+POST https://localhost:5001/api/formapagamento/create
+Content-Type: application/json
+
+{
+    "MetodoPagamento" : "Cartao",
+    "OpcaoPagamento": "À vista"
+}
+
+### Listar todas as categorias
+GET https://localhost:5001/api/categoria/list
