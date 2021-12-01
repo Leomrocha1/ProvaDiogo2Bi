@@ -1,9 +1,10 @@
 ### Cadastrar uma forma de pagamento
-POST https://localhost:5001/api/categoria/create
+POST https://localhost:5001/api/formapagamento/create
 Content-Type: application/json
 
 {
-    "Nome" : "Bebida"
+    "MetodoPagamento" : "Cartão",
+    "OpcaoPagamento": "Parcelado"
 }
 
 ### Listar todas as formas de pagamento

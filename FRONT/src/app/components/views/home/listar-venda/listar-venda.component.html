@@ -1,0 +1,23 @@
+
+<table mat-table [dataSource]="vendas" class="mat-elevation-z8">
+    <!-- Coluna do Id -->
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>ID</th>
+        <td mat-cell *matCellDef="let venda">{{ venda.id }}</td>
+    </ng-container>
+    <!-- Coluna do Nome Cliente-->
+    <ng-container matColumnDef="nome">
+        <th mat-header-cell *matHeaderCellDef>Nome Cliente</th>
+        <td mat-cell *matCellDef="let venda">{{ venda.nome }}</td>
+    </ng-container>
+    <!-- Coluna da Forma de Pagamento -->
+    <ng-container matColumnDef="formapagamento">
+        <th mat-header-cell *matHeaderCellDef>Forma de Pagamento</th>
+        <td mat-cell *matCellDef="let venda">
+            {{ venda.formapagamento.opcaopagamento }}
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="colunasExibidas"></tr>
+    <tr mat-row *matRowDef="let row; columns: colunasExibidas"></tr>
+</table>

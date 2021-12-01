@@ -3,9 +3,9 @@ POST https://localhost:5001/api/produto/create
 Content-Type: application/json
 
 {
-    "Nome" : "Bolacha",
-    "Preco" : 3.5,
-    "Quantidade": 10,
+    "Nome" : "Teclado",
+    "Preco" : 200,
+    "Quantidade": 2,
     "Descricao" : "Imagine uma descrição aqui",
     "CategoriaId" : 1
 }
